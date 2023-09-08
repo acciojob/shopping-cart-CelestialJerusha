@@ -6,19 +6,22 @@ add.addEventListener("click",
 function add1(){
 	var item = document.getElementById("item-name-input").value;
 	var price = document.getElementById("item-price-input").value;
+	var q = document.getElementById("item-qty-input").value;
 	var p = document.getElementById("para");
 	var tBody = document.getElementById("tb");
 	if(item !== "" && price !== ""){
 	tb.innerHTML+=`
 			 <tr>
 				<td>${item}</td>
+				<td>${q}</td>
 				<td>${price}</td>
 			</tr>
  `
-	sum+=parseInt(price);
+	sum+=(parseInt(price)*parseInt(q));
 	}
 	total.innerHTML = "Total: "+sum;
 	document.getElementById("item-name-input").value = "";
+	document.getElementById("item-qty-input").value = "";
 	document.getElementById("item-price-input").value = "";
 });
 total.innerHTML = "Total: "+sum;
