@@ -1,2 +1,7 @@
 
 /* Your CSS Code here. */
+table,thead,th,td{
+	border: 1px solid;
+	border-collapse: collapse;
+	padding: 10px;
+}
