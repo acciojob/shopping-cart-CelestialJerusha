@@ -2,7 +2,7 @@
 var add = document.getElementById("add");
 var total = document.getElementById("total");
 var sum = 0;
-add.addEventListener("click",add1);
+add.addEventListener("click",
 function add1(){
 	var item = document.getElementById("item-name-input").value;
 	var price = document.getElementById("item-price-input").value;
@@ -20,7 +20,7 @@ function add1(){
 	total.innerHTML = "Total: "+sum;
 	document.getElementById("item-name-input").value = "";
 	document.getElementById("item-price-input").value = "";
-}
+});
 total.innerHTML = "Total: "+sum;
 
 
