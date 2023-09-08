@@ -1,6 +1,5 @@
 //your code here
 var add = document.getElementById("add");
-add.addEventListener("click",add1);
 var total = document.getElementById("total");
 var sum = 0;
 
@@ -9,6 +8,7 @@ function add1(){
 	var price = document.getElementById("item-price-input").value;
 	var p = document.getElementById("para");
 	var tBody = document.getElementById("tb");
+	if(item !== "" && price !== ""){
 	tb.innerHTML+=`
 			 <tr>
 				<td>${item}</td>
@@ -16,7 +16,10 @@ function add1(){
 			</tr>
  `
 	sum+=parseInt(price);
+	}
 	total.innerHTML = "Total: "+sum;
+	document.getElementById("item-name-input").value = "";
+	document.getElementById("item-price-input").value = "";
 }
 total.innerHTML = "Total: "+sum;
 
