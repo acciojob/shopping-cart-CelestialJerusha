@@ -1,9 +1,9 @@
 //your code here
-
+var add = document.getElementById("add");
 var total = document.getElementById("total");
 var sum = 0;
-
-function add(){
+add.eventEventListener("click",add1);
+function add1(){
 	var item = document.getElementById("item-name-input").value;
 	var price = document.getElementById("item-price-input").value;
 	var p = document.getElementById("para");
