@@ -13,16 +13,16 @@ function add1(){
 	tb.innerHTML+=`
 			 <tr>
 				<td>${item}</td>
-				<td>${q}</td>
 				<td>${price}</td>
+				<td>${q}</td>
 			</tr>
  `
 	sum+=(parseInt(price)*parseInt(q));
 	}
 	total.innerHTML = "Total: "+sum;
 	document.getElementById("item-name-input").value = "";
-	document.getElementById("item-qty-input").value = "";
 	document.getElementById("item-price-input").value = "";
+	document.getElementById("item-qty-input").value = "";
 });
 total.innerHTML = "Total: "+sum;
 
