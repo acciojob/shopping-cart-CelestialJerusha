@@ -24,7 +24,7 @@ function add1(){
 	document.getElementById("item-price-input").value = "";
 	document.getElementById("item-qty-input").value = "";
 });
-total.innerHTML = "Total: "+sum;
+total.innerHTML = "grand total: "+sum;
 
 
 
