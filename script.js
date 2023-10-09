@@ -5,7 +5,7 @@ var sum = 0;
 add.addEventListener("click",
 function add1(){
 	var item = document.getElementById("item-name-input").value;
-	var price = document.getElementById("item-price-input").value;
+	var price = (document.getElementById("item-price-input").value)*(document.getElementById("item-qty-input").value);
 	var q = document.getElementById("item-qty-input").value;
 	var p = document.getElementById("para");
 	var tBody = document.getElementById("tb");
